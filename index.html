@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
   </head>
   <body style="text-align: center">
-    <img src="pp2.jpeg" />
+    <img
+      id="pp"
+      src="pp2.jpeg"
+      onclick="document.getElementById('cat').classList.remove('hide');document.getElementById('pp').classList.add('hide')"
+    />
+    <img
+      id="cat"
+      src="cat.jpeg"
+      class="hide"
+      onclick="document.getElementById('pp').classList.remove('hide');document.getElementById('cat').classList.add('hide')"
+    />
   </body>
 </html>
